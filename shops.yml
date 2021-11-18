@@ -1450,204 +1450,204 @@ Food:
 Mobs:
   1:
     material: "ARROW"
-    buy: 2.26
-    sell: 0.57
+    buy: 1
+    sell: 0.17
   2:
     material: "BLAZE_POWDER"
-    buy: 2.63
-    sell: 0.66
+    buy: 5
+    sell: 0.90
   3:
     material: "BLAZE_ROD"
-    buy: 5
-    sell: 1.25
+    buy: 10
+    sell: 1.80
   4:
     material: "BONE"
-    buy: 6
-    sell: 1.5
+    buy: 1
+    sell: 0.5
   5:
     material: "FEATHER"
-    buy: 6
-    sell: 1.5
+    buy: 0.2
+    sell: 0.09
   6:
     material: "FERMENTED_SPIDER_EYE"
-    buy: 9.57
-    sell: 2.4
+    buy: 5
+    sell: 0.90
   7:
     material: "GHAST_TEAR"
-    buy: 40
+    buy: 100
     sell: 10
   8:
     material: "GUNPOWDER"
-    buy: 15.5
-    sell: 3.88
+    buy: 6
+    sell: 0.60
   9:
     material: "MAGMA_CREAM"
-    buy: 8.01
-    sell: 2.01
+    buy: 6
+    sell: 0.60
   10:
     material: "NAUTILUS_SHELL"
-    buy: 180
-    sell: 45
+    buy: 50
+    sell: 5
   11:
     material: "PHANTOM_MEMBRANE"
-    buy: 125.15
-    sell: 31.29
+    buy: 25
+    sell: 2
   12:
     material: "RABBIT_FOOT"
-    buy: 180
-    sell: 45
+    buy: 50
+    sell: 10
   13:
     material: "RABBIT_HIDE"
     buy: 8
     sell: 2
   14:
     material: "ROTTEN_FLESH"
-    buy: 5
-    sell: 1.25
+    buy: 1
+    sell: 0.1
   15:
     material: "SPIDER_EYE"
-    buy: 7
-    sell: 1.75
+    buy: 3
+    sell: 0.30
   16:
     material: "STRING"
-    buy: 7
-    sell: 1.75
+    buy: 3
+    sell: 0.25
 
 #==================== Music ====================#
 
 Music:
   1:
     material: "MUSIC_DISC_11"
-    buy: 75
-    sell: 18.75
+    buy: 20
+    sell: 7
   2:
     material: "MUSIC_DISC_13"
-    buy: 75
-    sell: 18.75
+    buy: 15
+    sell: 5
   3:
     material: "MUSIC_DISC_BLOCKS"
-    buy: 75
-    sell: 18.75
+    buy: 50
+    sell: 21
   4:
     material: "MUSIC_DISC_CAT"
-    buy: 75
-    sell: 18.75
+    buy: 100
+    sell: 40
   5:
     material: "MUSIC_DISC_CHIRP"
-    buy: 75
-    sell: 18.75
+    buy: 40
+    sell: 15
   6:
     material: "MUSIC_DISC_FAR"
-    buy: 75
-    sell: 18.75
+    buy: 70
+    sell: 30
   7:
     material: "MUSIC_DISC_MALL"
-    buy: 75
-    sell: 18.75
+    buy: 35
+    sell: 13
   8:
     material: "MUSIC_DISC_MELLOHI"
-    buy: 75
-    sell: 18.75
+    buy: 30
+    sell: 11
   9:
     material: "MUSIC_DISC_PIGSTEP"
-    buy: 75
-    sell: 18.75
+    buy: 250
+    sell: 100
   10:
     material: "MUSIC_DISC_STAL"
-    buy: 75
-    sell: 18.75
+    buy: 45
+    sell: 18
   11:
     material: "MUSIC_DISC_STRAD"
-    buy: 75
-    sell: 18.75
+    buy: 90
+    sell: 35
   12:
     material: "MUSIC_DISC_WAIT"
-    buy: 75
-    sell: 18.75
+    buy: 200
+    sell: 80
   13:
     material: "MUSIC_DISC_WARD"
-    buy: 75
-    sell: 18.75
-
+    buy: 25
+    sell: 9
+    
 #==================== Ores ====================#
 
 Ores:
   1:
     material: "ANCIENT_DEBRIS"
-    buy: 529
-    sell: 132.25
+    buy: -1
+    sell: 100.00
   2:
     material: "COAL"
-    buy: 21
-    sell: 5.25
+    buy: 10
+    sell: 0.50
   3:
     material: "COAL_BLOCK"
-    buy: 198.45
-    sell: 49.62
+    buy: -1
+    sell: 5.00
   4:
     material: "DIAMOND"
-    buy: 210
-    sell: 52.5
+    buy: -1
+    sell: 0.25
   5:
     material: "DIAMOND_BLOCK"
-    buy: 1984.5
-    sell: 496.13
+    buy: -1
+    sell: 10.00
   6:
     material: "EMERALD"
-    buy: 142.23
-    sell: 35.56
+    buy: -1
+    sell: 0.40
   7:
     material: "EMERALD_BLOCK"
-    buy: 1344.01
-    sell: 336.01
+    buy: -1
+    sell: 12.00
   8:
     material: "GOLD_BLOCK"
-    buy: 297.68
-    sell: 74.42
+    buy: -1
+    sell: 0.75
   9:
     material: "GOLD_INGOT"
-    buy: 31.5
-    sell: 7.88
+    buy: 6
+    sell: 0.25
   10:
     material: "IRON_BLOCK"
-    buy: 198.45
-    sell: 49.62
+    buy: -1
+    sell: 8.00
   11:
     material: "IRON_INGOT"
     buy: 21
-    sell: 5.25
+    sell: 0.10
   12:
     material: "LAPIS_BLOCK"
-    buy: 136.44
-    sell: 34.11
+    buy: -1
+    sell: 1.00
   13:
     material: "LAPIS_LAZULI"
-    buy: 14.44
-    sell: 3.61
+    buy: -1
+    sell: 0.10
   14:
     material: "NETHERITE_BLOCK"
-    buy: 23296.05
-    sell: 5824.02
+    buy: -1
+    sell: 40.00
   15:
     material: "NETHERITE_INGOT"
-    buy: 2465.19
-    sell: 616.3
+    buy: -1
+    sell: 20.00
   16:
     material: "QUARTZ"
-    buy: 33.08
-    sell: 8.27
+    buy: -1
+    sell: 1.20
   17:
     material: "QUARTZ_BLOCK"
-    buy: 138.92
-    sell: 34.73
+    buy: -1
+    sell: 2.50
   18:
     material: "REDSTONE"
-    buy: 5.25
-    sell: 1.32
+    buy: -1
+    sell: 0.09
   19:
     material: "REDSTONE_BLOCK"
-    buy: 49.62
-    sell: 12.41
+    buy: -1
+    sell: 0.10
 
 #==================== Others ====================#
 
