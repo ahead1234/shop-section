@@ -1655,190 +1655,263 @@ Others:
   1:
     material: "ANVIL"
     buy: 713.32
-    sell: 178.33
+    sell: 100.00
   2:
     material: "BELL"
-    buy: 1000
-    sell: 250
+    buy: -1
+    sell: 20
   3:
     material: "CARROT_ON_A_STICK"
-    buy: 7.08
-    sell: 1.77
+    buy: -1
+    sell: -1
   4:
     material: "COBWEB"
-    buy: 40
-    sell: 10
+    buy: 50.00
+    sell: 1.25
   5:
     material: "COD_BUCKET"
     buy: 79.56
-    sell: 19.89
+    sell: -1
   6:
     material: "ELYTRA"
-    buy: 2415.2
-    sell: -1
+    buy: -1
+    sell: 189.00
   7:
     material: "ENDER_CHEST"
-    buy: 273.12
-    sell: 68.28
+    buy: -1
+    sell: 2.00
   8:
     material: "ENDER_EYE"
-    buy: 10.11
-    sell: 2.53
+    buy: -1
+    sell: 0.15
   9:
     material: "EXPERIENCE_BOTTLE"
-    buy: 107.94
+    buy: 150.00
     sell: -1
   10:
     material: "GLOWSTONE_DUST"
     buy: 7
-    sell: 1.75
+    sell: 0.75
   11:
     material: "HONEYCOMB"
-    buy: 3.15
+    buy: 1.15
     sell: 0.79
   12:
     material: "LAVA_BUCKET"
-    buy: 69.62
-    sell: 17.41
+    buy: 20.00
+    sell: -1
   13:
     material: "LEAD"
-    buy: 17.33
-    sell: 4.34
+    buy: 25.33
+    sell: 0.50
   14:
     material: "LILY_PAD"
-    buy: 28
-    sell: 7
+    buy: 30
+    sell: -1
   15:
     material: "LODESTONE"
-    buy: 2594.75
-    sell: 648.69
+    buy: -1
+    sell: 250.69
   16:
     material: "MAP"
-    buy: 99.29
-    sell: 24.83
+    buy: -1
+    sell: 16.83
   17:
     material: "NAME_TAG"
-    buy: 100
-    sell: 25
+    buy: 268.69
+    sell: 0.90
   18:
     material: "NETHER_STAR"
-    buy: 400
-    sell: 100
+    buy: -1
+    sell: 35
   19:
     material: "PUFFERFISH_BUCKET"
-    buy: 79.56
-    sell: 19.89
+    buy: 79.69
+    sell: -1
   20:
     material: "RED_BED"
-    buy: 96.09
-    sell: 24.03
+    buy: 96.69
+    sell: -1
   21:
+    material: "WHITE_BED"
+    buy: 96.69
+    sell: -1
+  22:
+    material: "ORANGE_BED"
+    buy: 96.69
+    sell: -1
+
+  23:
+    material: "MAGENTA_BED"
+    buy: 96.69
+    sell: -1
+
+  24:
+    material: "LIGHT_BLUE_BED"
+    buy: 96.69
+    sell: -1
+
+  25:
+    material: "YELLOW_BED"
+    buy: 96.69
+    sell: -1
+
+  26:
+    material: "LIME_BED"
+    buy: 96.69
+    sell: -1
+
+  27:
+    material: "PINK_BED"
+    buy: 96.69
+    sell: -1
+
+  28:
+    material: "GRAY_BED"
+    buy: 96.69
+    sell: -1
+
+  29:
+    material: "LIGHT_GRAY_BED"
+    buy: 96.69
+    sell: -1
+
+  30:
+    material: "CYAN_BED"
+    buy: 96.69
+    sell: -1
+
+  31:
+    material: "PURPLE_BED"
+    buy: 96.69
+    sell: -1
+
+  32:
+    material: "BLUE_BED"
+    buy: 96.69
+    sell: -1
+
+  33:
+    material: "BROWN_BED"
+    buy: 96.69
+    sell: -1
+
+  34:
+    material: "GREEN_BED"
+    buy: 96.69
+    sell: -1
+
+  35:
+    material: "BLACK_BED"
+    buy: 96.69
+    sell: -1
+  36:
     material: "SADDLE"
     buy: 60
-    sell: 15
-  22:
+    sell: -1
+  37:
     material: "SALMON_BUCKET"
     buy: 79.56
-    sell: 19.89
-  23:
+    sell: -1
+  38:
     material: "SCAFFOLDING"
-    buy: 1.33
-    sell: 0.34
-  24:
+    buy: -1
+    sell: 0.20
+  39:
     material: "SHULKER_SHELL"
-    buy: 7
-    sell: 1.75
-  25:
+    buy: -1
+    sell: 1.00
+  40:
     material: "SLIME_BALL"
-    buy: 5
-    sell: 1.25
-  26:
+    buy: -1
+    sell: 0.99
+  41:
     material: "SNOW"
     buy: 6.62
-    sell: 1.66
-  27:
+    sell: -1
+  42:
     material: "SNOWBALL"
     buy: 3
-    sell: 0.75
-  28:
+    sell: -1
+  43:
     material: "SPONGE"
-    buy: 525
-    sell: 131.25
-  29:
+    buy: -1
+    sell: 90.69
+  44:
     material: "TOTEM_OF_UNDYING"
-    buy: 100
-    sell: 25
-  30:
+    buy: 179.00
+    sell: -1
+  45:
     material: "TRIDENT"
-    buy: 180
-    sell: 45
-  31:
+    buy: -1
+    sell: 40.00
+  46:
     material: "TROPICAL_FISH_BUCKET"
-    buy: 79.56
-    sell: 19.89
-  32:
+    buy: 79.59
+    sell: -1
+  47:
     material: "TURTLE_EGG"
-    buy: 15
-    sell: 3.75
-  33:
+    buy: -1
+    sell: 1.75
+  48:
     material: "WARPED_FUNGUS_ON_A_STICK"
     buy: 23.65
-    sell: 5.92
-  34:
+    sell: -1
+  49:
     material: "WATER_BUCKET"
     buy: 69.57
-    sell: 17.4
-  35:
+    sell: -1
+  50:
     material: "WRITABLE_BOOK"
-    buy: 48.95
-    sell: 12.24
-  36:
+    buy: 29
+    sell: -1
+  51:
     material: "CREEPER_BANNER_PATTERN"
     buy: 630.12
     sell: 157.53
-  37:
+  52:
     material: "FLOWER_BANNER_PATTERN"
     buy: 1.17
     sell: 0.3
-  38:
+  53:
     material: "GLOBE_BANNER_PATTERN"
     buy: 1194.67
     sell: 298.67
-  39:
+  54:
     material: "MOJANG_BANNER_PATTERN"
     buy: 10500.12
     sell: 2625.03
-  40:
+  55:
     material: "PIGLIN_BANNER_PATTERN"
     buy: 10000
     sell: 2500
-  41:
+  56:
     material: "SKULL_BANNER_PATTERN"
     buy: 525.12
     sell: 131.28
-  42:
+  57:
     material: "BEACON"
-    buy: 551.52
+    buy: -1
     sell: 137.88
-  43:
+  58:
     material: "END_ROD"
-    buy: 2.14
+    buy: -1
     sell: 0.54
-  44:
+  59:
     material: "LANTERN"
-    buy: 24.57
+    buy: -1
     sell: 6.15
-  45:
+  60:
     material: "SOUL_LANTERN"
-    buy: 27.33
+    buy: -1
     sell: 6.84
-  46:
+  61:
     material: "CAMPFIRE"
-    buy: 33.33
+    buy: -1
     sell: 8.34
-  47:
+  62:
     material: "SOUL_CAMPFIRE"
-    buy: 21.78
+    buy: -1
     sell: 5.45
 
 #==================== Potions ====================#
