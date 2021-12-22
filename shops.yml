@@ -2551,212 +2551,212 @@ Potions:
     - "strong_turtle_master"
   106:
     material: "TIPPED_ARROW"
-    buy: 21.7
-    sell: 5.43
+    buy: -1
+    sell: -1
     potiontypes:
     - "fire_resistance"
   107:
     material: "TIPPED_ARROW"
-    buy: 23.14
-    sell: 5.79
+    buy: -1
+    sell: -1
     potiontypes:
     - "harming"
   108:
     material: "TIPPED_ARROW"
-    buy: 24.75
-    sell: 6.19
+    buy: -1
+    sell: -1
     potiontypes:
     - "healing"
   109:
     material: "TIPPED_ARROW"
-    buy: 27.23
-    sell: 6.81
+    buy: -1
+    sell: -1
     potiontypes:
     - "invisibility"
   110:
     material: "TIPPED_ARROW"
-    buy: 48.59
-    sell: 12.15
+    buy: -1
+    sell: -1
     potiontypes:
     - "leaping"
   111:
     material: "TIPPED_ARROW"
-    buy: 22.63
-    sell: 5.66
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_fire_resistance"
   112:
     material: "TIPPED_ARROW"
-    buy: 28.49
-    sell: 7.13
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_invisibility"
   113:
     material: "TIPPED_ARROW"
-    buy: 26.56
-    sell: 6.64
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_night_vision"
   114:
     material: "TIPPED_ARROW"
-    buy: 22.46
-    sell: 5.62
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_poison"
   115:
     material: "TIPPED_ARROW"
-    buy: 27.93
-    sell: 6.99
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_regeneration"
   116:
     material: "TIPPED_ARROW"
-    buy: 42.04
-    sell: 10.51
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_slow_falling"
   117:
     material: "TIPPED_ARROW"
-    buy: 22.94
-    sell: 5.74
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_slowness"
   118:
     material: "TIPPED_ARROW"
-    buy: 21.74
-    sell: 5.44
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_strength"
   119:
     material: "TIPPED_ARROW"
-    buy: 21.32
-    sell: 5.33
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_swiftness"
   120:
     material: "TIPPED_ARROW"
-    buy: 482.36
-    sell: 120.59
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_turtle_master"
   121:
     material: "TIPPED_ARROW"
-    buy: 22.3
-    sell: 5.58
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_water_breathing"
   122:
     material: "TIPPED_ARROW"
-    buy: 22.36
-    sell: 5.59
+    buy: -1
+    sell: -1
     potiontypes:
     - "long_weakness"
   123:
     material: "TIPPED_ARROW"
-    buy: 25.41
-    sell: 6.36
+    buy: -1
+    sell: -1
     potiontypes:
     - "night_vision"
   124:
     material: "TIPPED_ARROW"
-    buy: 21.55
-    sell: 5.39
+    buy: -1
+    sell: -1
     potiontypes:
     - "poison"
   125:
     material: "TIPPED_ARROW"
-    buy: 26.7
-    sell: 6.68
+    buy: -1
+    sell: -1
     potiontypes:
     - "regeneration"
   126:
     material: "TIPPED_ARROW"
-    buy: 40.01
-    sell: 10.01
+    buy: -1
+    sell: -1
     potiontypes:
     - "slow_falling"
   127:
     material: "TIPPED_ARROW"
-    buy: 21.99
-    sell: 5.5
+    buy: -1
+    sell: -1
     potiontypes:
     - "slowness"
   128:
     material: "TIPPED_ARROW"
-    buy: 20.86
-    sell: 5.22
+    buy: -1
+    sell: -1
     potiontypes:
     - "strength"
   129:
     material: "TIPPED_ARROW"
-    buy: 27.92
-    sell: 6.98
+    buy: -1
+    sell: -1
     potiontypes:
     - "strong_harming"
   130:
     material: "TIPPED_ARROW"
-    buy: 29.64
-    sell: 7.41
+    buy: -1
+    sell: -1
     potiontypes:
     - "strong_healing"
   131:
     material: "TIPPED_ARROW"
-    buy: 54.9
-    sell: 13.73
+    buy: -1
+    sell: -1
     potiontypes:
     - "strong_leaping"
   132:
     material: "TIPPED_ARROW"
-    buy: 26.24
-    sell: 6.56
+    buy: -1
+    sell: -1
     potiontypes:
     - "strong_poison"
   133:
     material: "TIPPED_ARROW"
-    buy: 31.71
-    sell: 7.93
+    buy: -1
+    sell: -1
     potiontypes:
     - "strong_regeneration"
   134:
     material: "TIPPED_ARROW"
-    buy: 25.51
-    sell: 6.38
+    buy: -1
+    sell: -1
     potiontypes:
     - "strong_strength"
   135:
     material: "TIPPED_ARROW"
-    buy: 25.09
-    sell: 6.28
+    buy: -1
+    sell: -1
     potiontypes:
     - "strong_swiftness"
   136:
     material: "TIPPED_ARROW"
-    buy: 486.14
-    sell: 121.54
+    buy: -1
+    sell: -1
     potiontypes:
     - "strong_turtle_master"
   137:
     material: "TIPPED_ARROW"
-    buy: 20.47
-    sell: 5.12
+    buy: -1
+    sell: -1
     potiontypes:
     - "swiftness"
   138:
     material: "TIPPED_ARROW"
-    buy: 455.41
-    sell: 113.86
+    buy: -1
+    sell: -1
     potiontypes:
     - "turtle_master"
   139:
     material: "TIPPED_ARROW"
-    buy: 21.39
-    sell: 5.35
+    buy: -1
+    sell: -1
     potiontypes:
     - "water_breathing"
   140:
     material: "TIPPED_ARROW"
-    buy: 21.45
-    sell: 5.37
+    buy: -1
+    sell: -1
     potiontypes:
     - "weakness"
 
