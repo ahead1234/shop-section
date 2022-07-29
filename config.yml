@@ -1,7 +1,42 @@
+# Config.yml of EconomyShopGUI
+#
 # More info about all of the options can be found at the EconomyShopGUI wiki
 # https://gpplugins.gitbook.io/economyshopgui/file-configuration/config.yml
+####################################################################################
+#                                                                                  #
+#            ##############          ########                                      #
+#            ##############         ########                                       #
+#            ##                    ##                                              #
+#            ##                   ##                                               #
+#            ##                    ##                                              #
+#            ########               #######           ############                 #
+#            ########                #######          ############                 #
+#            ##                            ##                                      #
+#            ##                             ##                                     #
+#            ##                            ##                                      #
+#            ##############         ########                                       #
+#            ##############        ########                                        #
+#                                                                                  #
+#                                                                                  #
+#                                                                                  #
+#              ###########           ##             ##      ########               #
+#             #############          ##             ##        ####                 #
+#            ##                      ##             ##         ##                  #
+#           ##                       ##             ##         ##                  #
+#           ##                       ##             ##         ##                  #
+#           ##   #########           ##             ##         ##                  #
+#           ##   ##########          ##             ##         ##                  #
+#           ##            ##         ##             ##         ##                  #
+#           ##             ##        ##             ##         ##                  #
+#            ##           ##          ##           ##          ##                  #
+#             #############            #############          ####                 #
+#              ###########              ###########         ########               #
+#                                                                                  #
+#                                                                                  #
+#                                                                                  #
+####################################################################################
 #
-config-version: 1.1.6
+config-version: 1.1.9
 # WARNING: Do not change this value as this might end up in a plugin that does not work!!
 #----------------------------------------------Language-------------------------------------------------
 
@@ -10,10 +45,11 @@ language-file: lang-en.yml
 
 # See this link for all available language files: https://gpplugins.gitbook.io/economyshopgui/file-configuration/languages#currently-supported-languages
 
+
 #-----------------------------------------------Locale--------------------------------------------------
 
 # This is the locale of the plugin.
-# Currently its only used to format the prices.
+# Currently, its only used to format the prices.
 locale: en-US
 
 # Note: This is not the locale at which messages will be translated, see the above option for that.
@@ -30,8 +66,14 @@ update-checking: true
 #----------------------------------------------DebugMode------------------------------------------------
 
 # Set this value to false to disable debug mode and do not send debug messages to the console.
-debug: false
+debug: true
 # NOTE: The console may get spammed when debug mode is enabled.
+
+
+#---------------------------------------------Transactions----------------------------------------------
+
+# Whether transactions should be logged to a text file
+transaction-log: true
 
 
 #---------------------------------------DisabledCommandsInWorlds----------------------------------------
@@ -60,14 +102,26 @@ disabled-worlds-per-command:
 # meaning that a command still can conflict with the same command from another plugin.
 
 
+#--------------------------------------------EconomyProvider--------------------------------------------
+
+# Use this to set a different economy provider other than vault
+# Available values are 'VAULT', 'PLAYER_POINTS', 'GEMS_ECONOMY' and 'ULTRA_ECONOMY'
+economy-provider: VAULT
+# Note that PlayerPoints does not use decimal prices and our default item prices are configured to do so, we recommend u to change the item prices, or you will run into some issues
+# When no provider is set or couldn't be found, we will try to hook into VAULT
+
+
 #--------------------------------------------SpawnerProvider--------------------------------------------
 
 # This option can be used to set an external spawner provider to use for the spawners inside the shop
 # Available values:
+# DISABLED = This will disable both spawner place and break event which disables the spawner provider
 # DEFAULT = The default spawner provider inside ESGUI
 # SILKSPAWNERS = An external spawner provider
 # WILDSTACKER = An external spawner provider that can stack/upgrade spawners
 # ULTIMATESTACKER = An external spawner provider that can stack spawners
+# ROSESTACKER = An external spawner provider that can stack spawners
+# MINEABLESPAWNERS = An external spawner provider
 spawner-provider: DEFAULT
 # NOTE: When there is no spawner provider set, the default will be used
 
@@ -84,22 +138,176 @@ drop-remaining-items-on-ground: false
 # When this option is false, the plugin will only give the items that fit inside the inventory and the remaining items will be cancelled. The player will only pay for the amount of items that fit inside the inventory.
 # Warning: When this option is true, players could lag out your server by buying an insane amount of items that fall on the ground!
 
+# When purchasing a item from shop, should the transaction message say which material was sold/bought from shop or should it be the item name?
+use-item-name: true
+# When this is false, purchasing/selling a item to shop will cause the message in chat use the material name of the item instead of the item name to let the player know what has been sold/bought
+
 
 #-----------------------------------------------MainShop------------------------------------------------
 
-# Set the size of the main shop inventory
+# Set the size of the main shop inventory in rows
 # Possible values: 2 | 3 | 4 | 5 | 6
 mainshop-size: 6
-# Note that the navigation bar also is 1 row which can't be disabled currently
+# Note that the navigation bar also is 1 row which can't be disabled
+
+
+#--------------------------------------------NavigationBar----------------------------------------------
+
+# These settings allow you to customize the items in the bottom row of the GUI, aka the navigation bar
+# Valid placeholders:
+# %player_name% = the player name
+# %player_balance% = the player's balance
+# %player_level% = the player's ingame experience level
+# %translations-money% = the translated message of 'money'
+# %translations-level% = the translated message of 'level'
+# %translations-previous-page% = the translated message of 'previous-page'
+# %translations-current-page% = the translated message of 'current-page'
+# %translations-next-page% = the translated message of 'next-page'
+# %translations-back% = the translated message of 'back'
+# %translations-cancel% = the translated message of 'cancel'
+# Valid actions:
+# PAGE_BACK = Open the previous page when clicked
+# PAGE_NEXT = Open the next page when clicked
+# BACK = Open the previous menu when clicked
+
+# The navigation bar that appears in the main menu
+main-menu-nav-bar:
+  1:
+    material: player_head
+    name: "%player_name%"
+    lore:
+      - "%translations-money%: &c%player_balance%"
+  2:
+    material: air
+  3:
+    material: air
+  4:
+    material: air
+  5:
+    material: air
+  6:
+    material: air
+  7:
+    material: air
+  8:
+    material: air
+  9:
+    material: barrier
+    name: "%translations-cancel%"
+    action: BACK
+
+# The navigation bar that appears in every shop category
+shops-nav-bar:
+  1:
+    material: player_head
+    skullowner: "%player_name%"
+    name: "%player_name%"
+    lore:
+      - "%translations-money%: &c%player_balance%"
+  2:
+    material: air
+  3:
+    material: air
+  4:
+    material: red_stained_glass_pane
+    name: "%translations-previous-page%"
+    action: PAGE_BACK
+  5:
+    material: paper
+    name: "%translations-current-page%"
+  6:
+    material: blue_stained_glass_pane
+    name: "%translations-next-page%"
+    action: PAGE_NEXT
+  7:
+    material: air
+  8:
+    material: air
+  9:
+    material: barrier
+    name: "%translations-back%"
+    action: BACK
+
+# The navigation bar that appears in the buy/sell screens and the buy stacks screen
+transaction-screens-nav-bar:
+  1:
+    material: player_head
+    skullowner: "%player_name%"
+    name: "%player_name%"
+    lore:
+      - "%translations-money%: &c%player_balance%"
+  2:
+    material: air
+  3:
+    material: air
+  4:
+    material: air
+  5:
+    material: air
+  6:
+    material: air
+  7:
+    material: air
+  8:
+    material: air
+  9:
+    material: barrier
+    name: "%translations-back%"
+    action: BACK
+
+# The navigation bar that appears in the /sellGUI screen
+sellgui-nav-bar:
+  1:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+  2:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+  3:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+  4:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+  5:
+    material: NETHER_STAR
+    name: "&a&lSellGUI"
+    lore:
+      - "&6Drop items in to sell"
+      - "&6upon closing, everything will be sold."
+      - "&eItems that couldn't be sold"
+      - "&ewill be given back to you."
+  6:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+  7:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+  8:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+  9:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
 
 
 #---------------------------------------------ItemSettings----------------------------------------------
 
-# Enable/disable the lore on items given to players when a item is bought from shop
+# Allows items with a different name to be sold to the shop
+allow-renamed-items: true
+
+# Allows items with different lore to be sold to the shop
+allow-lore-items: true
+
+# Enable/disable the lore on items given to players when an item is bought from shop
 bought-items-lore: true
 
-# Allows enchants greater than the max that Mojang has specified.
+# Allow enchants greater than the max level that Mojang has specified.
 allow-unsafe-enchants: true
+
+# This option will toggle whether non-stackable/over-stacked items are allowed inside the shop
+# When having troubles with illegal-stack plugins and this plugin, disable this option to limit item stacking to their natural stack size to prevent future issues
+allow-illegal-stacks: true
 
 # The NBT Tags listed below will be ignored when a item gets sold to the shop
 # For example:
@@ -124,7 +332,7 @@ discounts:
     vip: 15
   Redstone:
     diamond: 30
-# If a player has for example access to 2 permission discounts inside the same shop section, the group with the highest discount will be active
+# If a player has for example access to 2 permission discounts inside the same shop section, the discount with the highest value will be active
 
 # Set the limit for maximum pages inside a shop section, default is 50 but you can expand it to 100 if needed
 max-shop-pages: 50
@@ -175,9 +383,20 @@ buy-sell-screen:
 
 #-----------------------------------------------Commands------------------------------------------------
 
-# These are the commands included in EconomyShopGUI
-# Set an command to true to enable it, and set an command to false to disable it.
+# When this option is turned on it will automatically override the essential's sell command with an alias to /sellall.
+# There are a few reasons why this setting is turned on for default, and you should use /sellall instead of /sell
+# 1. EconomyShopGUI's /sellall command is capable of differentiating item meta data whereas the /sell command from essentials sells items according to their material
+# 2. Players accidentally use /sell instead of /sellall ending up in giving them a different sell price for the item
+override-sell-command: true
+# Note: Disabling this feature will get rid of the command alias, but you will need to restart your server to see changes
 
+# This setting will enable the use of the old /sellall command
+# Meaning that if the below setting is set to true, players can use '/sellall' without a subcommand to sell the whole inventory instead of '/sellall inventory'
+old-sellall-command: false
+# This setting is set to false by default because it may confuse players with the /sell command from essentials, ending in them accidentally selling their whole inventory
+
+# These are the commands included in EconomyShopGUI
+# Set a command to true to enable it, and set a command to false in order to disable it.
 commands:
 
   # SellAll command lets you sell all items inside your inventory that are listed in the shop, or you can sell a specific item.
@@ -192,6 +411,9 @@ commands:
   # With this command you can add/remove items without configuring the shops config
   editshop: true
 
+  # This command opens a sell GUI to sell items
+  sellgui: true
+
 # Set different aliases for the main shop command, defaults to /shop if empty
 # Do not use a slash('/') before the command name or it will not work
 shop-commands:
@@ -202,10 +424,14 @@ shop-commands:
 sellall-commands:
   - "sellall"
 
+# Set different aliases for the sellgui command, defaults to /sellgui if empty
+sellgui-commands:
+  - "sellgui"
+
 #-------------------------------------------DisableBackButton-------------------------------------------
 
-# This option will enable/disable disabling the back button when opening a shop section directly by the command /shop <section>
-# This option is use full if you have a NPC plugin setup when you click on it it will open a specific shop section, this will prevent the players to go back to the main menu and choose another shop section.
+# This option will toggle disabling the back button when opening a shop section directly by the command /shop <section>
+# This option is useful if you have a NPC plugin setup when you click on it, it will open a specific shop section, this will prevent the players to go back to the main menu and choose another shop section.
 disableBackButtonWithShopSectionCommand: false
 
 
@@ -232,7 +458,7 @@ leveleventmoney20/25/30: 50
 # NOTE: Changing any of the below settings requires a server restart to take effect
 
 # If you set this to 'false' you can only place spawners that are bought, you won't be able to get them back with an (Silk Touch) pickaxe.
-enable-spawnerbreak: false
+enable-spawnerbreak: true
 
 # When this option is set to false, you will no longer be able to place spawners bought from the shop with the EconomyShopGUI spawner system.
 enable-spawnerplace: true
@@ -242,17 +468,20 @@ player-placed-spawners-drop-exp: false
 
 # Set the items that are allowed to break a spawner
 # If a spawner gets broken with another item then listed here, the spawner will not be given to the player
-# spawner-break-tools:
+spawner-break-tools:
 
-#   1:
-#     material: DIAMOND_PICKAXE
-#     enchantments:
-#     - "SILK_TOUCH"
-#   2:
-#     material: IRON_PICKAXE
-#   3:
-#     material: NETHERITE_PICKAXE
-#     enchantments:
-#       - "SILK_TOUCH"
+  1:
+    material: DIAMOND_PICKAXE
+    enchantments:
+    - "SILK_TOUCH"
+  2:
+    material: IRON_PICKAXE
+    enchantments:
+    - "SILK_TOUCH"
+    - "EFFICIENCY:2" # This means that the pickaxe needs ATLEAST efficiency 2 for a spawner to be mined
+  3:
+    material: NETHERITE_PICKAXE
+    enchantments:
+      - "SILK_TOUCH"
 
 # NOTE: When any other 3rd party spawner provider is enabled and setup, these options will no longer work since they are not controlled anymore by ESGUI
