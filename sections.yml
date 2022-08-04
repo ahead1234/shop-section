@@ -4,19 +4,19 @@
 ShopSections:
 
   Blocks:
-    enable: true
+    enable: false
     material: "GRASS_BLOCK"
     displayname: "&2&lBlocks"
     place: 19
 
   Decoration:
-    enable: true
+    enable: false
     material: "TUBE_CORAL"
     displayname: "&9&lDecoration"
     place: 30
 
   Dyes:
-    enable: true
+    enable: false
     material: "CYAN_DYE"
     displayname: "&2&lDyes"
     place: 23
@@ -36,19 +36,19 @@ ShopSections:
     place: 20
 
   Food:
-    enable: true
+    enable: ture
     material: "COOKED_BEEF"
     displayname: "&6&lFood"
     place: 25
 
   Mobs:
-    enable: true
+    enable: false
     material: "GUNPOWDER"
     displayname: "&7&lMobs"
     place: 21
 
   Music:
-    enable: true
+    enable: false
     material: "MUSIC_DISC_STRAD"
     displayname: "&6&lMusic"
     place: 14
@@ -60,20 +60,20 @@ ShopSections:
     place: 13
 
   Others:
-    enable: true
+    enable: false
     material: "SADDLE"
     displayname: "&c&lOthers"
     place: 24
 
   Potions:
-    enable: true
+    enable: false
     material: "POTION"
     displayname: "&d&lPotions + Tipped Arrows"
-    potion-glow: true
+    potion-glow: false
     place: 31
 
   Redstone:
-    enable: true
+    enable: false
     material: "REDSTONE"
     displayname: "&c&lRedstone"
     place: 32
@@ -87,7 +87,7 @@ ShopSections:
     place: 31
 
   Workstations:
-    enable: true
+    enable: false
     material: "GRINDSTONE"
     displayname: "&7&lWorkstations"
     place: 12
