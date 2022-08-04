@@ -1,3 +1,14 @@
+##################################################################################
+#                                                                                #
+#              Please note that this file is no longer updated                   #
+#    and contains outdated information, see our wiki for the updated version     #
+#                                                                                #
+#   https://gpplugins.gitbook.io/economyshopgui/file-configuration/shops.yml     #
+#  https://gpplugins.gitbook.io/economyshopgui/file-configuration/sections.yml   #
+#                                                                                #
+##################################################################################
+
+
 #These are some examples that can help you with making an normal/special items like enchanted, potion or spawner items.
 
 #You will find very handy tips by reading the info here.

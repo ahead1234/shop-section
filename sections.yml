@@ -1,6 +1,5 @@
-#File Generated: 20220724-2137 | MCversion: 1.19 | ESGUI ver: 4.8.0 | ESGUI-Prem ver: 3.1.0
-#Please Check out the wiki for more information about configuring these files!
-#@ https://gpplugins.gitbook.io/economyshopgui/
+# Customize this file to change all shop items inside the main shop screen
+# For more info about this file, please visit our wiki here: https://gpplugins.gitbook.io/economyshopgui/file-configuration/sections.yml
 
 ShopSections:
 
@@ -60,10 +59,10 @@ ShopSections:
     displayname: "&f&lOres"
     place: 13
 
-  Miscellaneous:
+  Others:
     enable: true
     material: "SADDLE"
-    displayname: "&c&lMiscellaneous"
+    displayname: "&c&lOthers"
     place: 24
 
   Potions:
@@ -71,7 +70,7 @@ ShopSections:
     material: "POTION"
     displayname: "&d&lPotions + Tipped Arrows"
     potion-glow: true
-    place: 40
+    place: 31
 
   Redstone:
     enable: true
@@ -82,7 +81,7 @@ ShopSections:
     - "&4&lFor all redstone geeks!"
 
   Spawners:
-    enable: true
+    enable: false
     material: "SPAWNER"
     displayname: "&8&lSpawners"
     place: 31
@@ -110,5 +109,6 @@ ShopSections:
 
 Fill-item:
   material: "GRAY_STAINED_GLASS_PANE"
-  name: " "
+# displayname: "&8Nothing here"
+  #Disable this item by setting this value to false
   enable: true
